@@ -1,0 +1,77 @@
+# VS .editorconfig reference
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
+ 
+root = true
+ 
+[*]
+end_of_line = crlf
+indent_style = space
+indent_size = 4
+ 
+[*.cs]
+# 'this' keyword
+# dotnet_style_qualification_for_field = false:warning
+# dotnet_style_qualification_for_property = false:warning
+dotnet_style_qualification_for_method = false:warning
+dotnet_style_qualification_for_event = false:warning
+# type keywords instead of type names (Int32 -> int)
+dotnet_style_predefined_type_for_locals_parameters_members = true:error
+dotnet_style_predefined_type_for_member_access = true:error
+# object initializers
+dotnet_style_object_initializer = false:warning
+# collections initializers
+dotnet_style_collection_initializer = true:warning
+# explicit tuple names
+dotnet_style_explicit_tuple_names = true:warning
+# null-check
+dotnet_style_coalesce_expression = true:error
+# null propagation (.?)
+dotnet_style_null_propagation = true:error
+# 'var' keyword
+csharp_style_var_for_built_in_types = true:warning
+csharp_style_var_when_type_is_apparent = true:warning
+csharp_style_var_elsewhere = true:warning
+# expressions (lambda)
+csharp_style_expression_bodied_methods = false:error
+csharp_style_expression_bodied_constructors = false:error
+csharp_style_expression_bodied_operators = false:error
+csharp_style_expression_bodied_properties = false:error
+csharp_style_expression_bodied_indexers = false:error
+csharp_style_expression_bodied_accessors = false:error
+# pattern matching
+csharp_style_pattern_matching_over_is_with_cast_check = true:error
+csharp_style_pattern_matching_over_as_with_null_check = true:error
+# inline (out) variables
+csharp_style_inlined_variable_declaration = true:error
+# 'default' keyword
+csharp_prefer_simple_default_expression = true:warning
+# 'throw' keyword
+csharp_style_throw_expression = true:warning
+# conditional calls (.?)
+csharp_style_conditional_delegate_call = true:error
+# force braces
+csharp_prefer_braces = true:error
+# 'using' keyword
+dotnet_sort_system_directives_first = true
+# newline
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_within_query_expression_clauses = true
+# 'switch' keyword
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+# 'goto' keyword
+csharp_indent_labels = flush_left
+# spacing
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+# wrapping
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = true

@@ -1,0 +1,2 @@
+ver: 1.16.115
+https://ci.appveyor.com/nuget/vigem-net-ci/Packages

@@ -31,7 +31,7 @@ namespace gPadX.ViewModels {
             IsRefreshing = true;
 
             Task.Run(() => {
-                var devices = DeviceManager.GetDevices(DeviceManager.DeviceType.Joystick | DeviceManager.DeviceType.Gamepad);
+                var devices = DeviceManager.GetDevices(DeviceManager.DeviceType.Joystick, DeviceManager.DeviceType.Gamepad);
 
                 // removing disconnected devices
                 var devicesToRemove = Devices.Where(x => !devices.Any(y => y.Id == x.Id)).ToArray();

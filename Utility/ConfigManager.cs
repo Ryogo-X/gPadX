@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Text.Json;
 using gPadX.Models;
-using Newtonsoft.Json;
 
 namespace gPadX.Utility {
     static class ConfigManager {
-        readonly static string configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.json");
+        readonly static string configPath = Path.Combine(Directory.GetCurrentDirectory(), "config.json");
         static Lazy<ConfigModel> lazyConfig = new Lazy<ConfigModel>(() => {
             return TryLoad(out var config) ? config : new ConfigModel();
         }, false);
@@ -21,7 +21,7 @@ namespace gPadX.Utility {
 
             try {
                 var json = File.ReadAllText(configPath, Encoding.UTF8);
-                config = JsonConvert.DeserializeObject<ConfigModel>(json);
+                config = JsonSerializer.Deserialize<ConfigModel>(json);
                 success = config != null;
             } catch { }
 
@@ -29,7 +29,7 @@ namespace gPadX.Utility {
         }
 
         public static void Save() {
-            var json = JsonConvert.SerializeObject(Config);
+            var json = JsonSerializer.Serialize(Config);
             File.WriteAllText(configPath, json, Encoding.UTF8);
         }
     }

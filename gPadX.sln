@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29318.209
+VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gPadX", "gPadX.csproj", "{E51D9EB1-0BD3-44DA-9CD9-FB556ED73699}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gPadX", "gPadX.csproj", "{BD03CF2C-5486-4ED3-9ED7-E7AFF43151CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E51D9EB1-0BD3-44DA-9CD9-FB556ED73699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E51D9EB1-0BD3-44DA-9CD9-FB556ED73699}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E51D9EB1-0BD3-44DA-9CD9-FB556ED73699}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E51D9EB1-0BD3-44DA-9CD9-FB556ED73699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD03CF2C-5486-4ED3-9ED7-E7AFF43151CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD03CF2C-5486-4ED3-9ED7-E7AFF43151CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD03CF2C-5486-4ED3-9ED7-E7AFF43151CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD03CF2C-5486-4ED3-9ED7-E7AFF43151CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {40A800A7-20B9-4300-B5FF-B95303E63670}
+		SolutionGuid = {CDFDA030-B4CE-4715-9A0C-44E52B28B321}
 	EndGlobalSection
 EndGlobal

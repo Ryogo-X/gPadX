@@ -75,3 +75,6 @@ csharp_space_between_parentheses = false
 # wrapping
 csharp_preserve_single_line_statements = false
 csharp_preserve_single_line_blocks = true
+
+# CA1721: Property names should not match get methods
+dotnet_diagnostic.CA1721.severity = none

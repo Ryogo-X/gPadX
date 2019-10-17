@@ -5,8 +5,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:gPadX.Views"
-        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:controls="clr-namespace:gPadX.WPF.Controls"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
@@ -43,16 +42,16 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Alias" />
-                <TextBox Grid.Column="2" Grid.ColumnSpan="2" Text="{Binding Alias}" />
+                <TextBox Grid.Column="2" Grid.ColumnSpan="2" Text="{Binding Alias, Mode=TwoWay}" />
 
                 <TextBlock Grid.Row="2" Text="Map d-pad to LS" />
-                <CheckBox Grid.Row="2" Grid.Column="3" IsChecked="{Binding MapDPadToLS}" HorizontalAlignment="Right" />
+                <CheckBox Grid.Row="2" Grid.Column="3" IsChecked="{Binding MapDPadToLS, Mode=TwoWay}" HorizontalAlignment="Right" />
 
                 <TextBlock Grid.Row="4" Text="LS deadzone" />
-                <xctk:IntegerUpDown Grid.Row="4" Grid.Column="3" Minimum="0" Maximum="255" Value="{Binding LSDeadZone}" />
+                <controls:NumericUpDown Grid.Row="4" Grid.Column="3" Minimum="0" Maximum="255" Value="{Binding LSDeadZone, Mode=TwoWay}" />
 
                 <TextBlock Grid.Row="6" Text="RS deadzone" />
-                <xctk:IntegerUpDown Grid.Row="6" Grid.Column="3" Minimum="0" Maximum="255" Value="{Binding RSDeadZone}" />
+                <controls:NumericUpDown Grid.Row="6" Grid.Column="3" Minimum="0" Maximum="255" Value="{Binding RSDeadZone, Mode=TwoWay}"  />
             </Grid>
         </Border>
 
